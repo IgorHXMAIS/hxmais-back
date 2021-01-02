@@ -27,6 +27,9 @@ Route::group([
     //Routes analytics
     Route::get('/dashboard/analytics', 'SubscriptionsController@analyticsDashboard');
 
+    //Routes analytics - Details
+    Route::get('/dashboard/analytics/clients/overdue', 'SubscriptionsController@analyticsDashboardClientsOverdue');
+
     Route::get('', 'SalesController@index');
     Route::get('{type}/{doc}', 'SalesController@show');
 
